@@ -1,3 +1,14 @@
+git clone https://github.com/opf/openproject.git
+ls -a
+cd openproject/
+ls -a
+cp .env.example .env
+cp docker-compose.override.example.yml docker-compose.override.yml
+docker compose run --rm backend setup
+docker compose run --rm frontend npm install
+docker compose up frontend backend
+
+
 # OpenProject
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/opf/openproject)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/opf/openproject)
