@@ -1,12 +1,12 @@
-git clone https://github.com/opf/openproject.git
-ls -a
-cd openproject/
-ls -a
-cp .env.example .env
-cp docker-compose.override.example.yml docker-compose.override.yml
-docker compose run --rm backend setup
-docker compose run --rm frontend npm install
-docker compose up frontend backend
+1. git clone https://github.com/opf/openproject.git
+2. ls -a
+3. cd openproject/
+4. ls -a
+5. cp .env.example .env
+6. cp docker-compose.override.example.yml docker-compose.override.yml
+7. docker compose run --rm backend setup
+8. docker compose run --rm frontend npm install
+9. docker compose up frontend backend
 
 
 # OpenProject
